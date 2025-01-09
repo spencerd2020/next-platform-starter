@@ -1,13 +1,17 @@
 backend:
   name: git
-  repo: spencerd2020
-media_folder: static/images/uploads
-public_folder: /images/uploads
-collections:
+  repo: spencerd2020  # Replace with your GitHub repository
+  branch: main  # Specify your default branch
+
+media_folder: static/images/uploads  # Where uploaded files will go
+public_folder: /images/uploads       # Public URL for the media folder
+
+collections:                         # Define content types
   - name: blog
     label: Blog
-    folder: content/blog
+    folder: content/blog             # Location of your content files
     create: true
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Body, name: body, widget: markdown }
+    fields:                          # Fields for the blog content
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
