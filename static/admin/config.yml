@@ -1,0 +1,13 @@
+backend:
+  name: git
+  repo: spencerd2020
+media_folder: static/images/uploads
+public_folder: /images/uploads
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
