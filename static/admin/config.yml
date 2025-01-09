@@ -1,6 +1,6 @@
 backend:
   name: git
-  repo: spencerd2020  # Replace with your GitHub repository
+  repo: github.com/spencerd2020/next-platform-starter  # Replace with your GitHub repository
   branch: main  # Specify your default branch
 
 media_folder: static/images/uploads  # Where uploaded files will go
